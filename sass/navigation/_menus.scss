@@ -1,18 +1,16 @@
 .top-header .btn-ms{
-  padding-top: 21px;
-  padding-bottom: 21px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    line-height: 1.2;
+    border-width: 0 1px 0 1px;
+    font-size: 14px;
 }
 
 .site-branding {
     float: left;
     max-width: 200px;
     width: 100%;
-    span.logo {
-	    font-size: 40px;
-	    line-height: 1.6;
-	    text-transform: uppercase;
-	    letter-spacing: 2.1px;
-	}
+    padding: 5px 0;
 }
 
 .main-navigation {
@@ -74,10 +72,13 @@
 	a {
 		color:#fff;
 		display: block;
-		padding: 20px;
+		padding: 15px 20px;
 		text-decoration: none;
 		i{
-			color:#fff;
+			color: #fff;
+            font-size: 30px;
+            line-height: 100%;
+            vertical-align: middle;
 		}
 	}
     

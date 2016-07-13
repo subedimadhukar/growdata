@@ -1,0 +1,25 @@
+{
+  "name": "growdata",
+  "homepage": "https://github.com/subedimadhukar/growdata",
+  "authors": [
+    "Madhukar Subedi <madhukar@excelthemes.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^1.9.1",
+    "Ionicons": "ionicons#^2.0.1",
+    "raphael-min": "http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js",
+    "morris.min": "http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"
+  }
+}

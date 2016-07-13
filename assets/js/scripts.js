@@ -1,6 +1,6 @@
 !function (e) {
     "use strict";
-    var n = window.AK_JS || {};
+    var n = window.GBYDATA_JS || {};
         
         n.PreLoader = function () {
             e(".page-loader").hide();
@@ -36,50 +36,81 @@
             }
         },
 
-        n.DataBackground = function () {
-            var pageSection = e(".data-bg");
-            pageSection.each(function (indx) {
+        n.Infographs = function () {
+            Morris.Donut({
+                element: 'learners',
+                resize: 'true',
+                colors: [
+                        '#0b62a4',
+                        '#188ae2',
+                        '#f9c851'
+                      ],
+                
+                data: [
+                        {value: 63, label: 'Active Learners', formatted: '63% ' },
+                        {value: 37, label: 'Non Active', formatted: '37% ' }
+                      ],
+                      formatter: function (x, data) { return data.formatted; }
+              });
+              
+              e( "#learners" ).mouseover(function() {
+                    preparelearners();
+                });
 
-                if (e(this).attr("data-background")) {
-                    e(this).css("background-image", "url(" + e(this).data("background") + ")");
+                e( document ).ready(function() {
+                    preparelearners();
+                });
+
+                function preparelearners() {
+                    e("#learners tspan:first").css("display","none");
+                    e("#learners tspan:nth-child(1)").css("font-size","40px");
+                    
+                    var isi = e("#learners tspan:first").html();
+                    e('#learnersSpan').text(isi);
                 }
+
+             Morris.Donut({
+                element: 'total_learners',
+                resize: 'true',
+                colors: [
+                        '#0b62a4',
+                        '#188ae2',
+                        '#f9c851'
+                      ],
+                data: [
+                        {value: 63, label: 'Active Learners', formatted: '63% ' },
+                        {value: 37, label: 'Non Active', formatted: '37% ' }
+                      ],
+                      formatter: function (x, data) { return data.formatted; }
+              });
+
+              Morris.Bar({
+              element: 'data-bar',
+              resize: 'true',
+              data: [
+                { y: '2/15', a: 5},
+                { y: '2/16', a: 4},
+                { y: '2/17', a: 9},
+                { y: '2/18', a: 10},
+                { y: '2/19', a: 15},
+                { y: '2/20', a: 10},
+                { y: '2/21', a: 14}
+              ],
+              xkey: 'y',
+              ykeys: ['a'],
+              labels: ['Series A', 'Series B']
             });
         },
-
+        
+        n.ToolTip = function () {
+            e('[data-toggle="tooltip"]').tooltip();
+        },
 
         e(document).ready(function () {
-            n.PreLoader(), n.mobileMenu.init(), n.DataBackground()
+            n.PreLoader(), n.mobileMenu.init(), n.Infographs(), n.ToolTip()
         }), e(window).resize(function () {
         n.mobileMenu.addRemoveClasses()
     })
 }(jQuery);
 
-//Morris charts snippet - js
 
-jQuery(document).ready(function ($) {
-  Morris.Donut({
-        element: 'donut-example',
-        data: [
-         {label: "Active Lerners", value: 63},
-         {label: "Non Active", value: 37}
-        ]
-      });
-
-  Morris.Bar({
-  element: 'bar-example',
-  data: [
-    { y: '2/15', a: 5},
-    { y: '2/16', a: 4},
-    { y: '2/17', a: 9},
-    { y: '2/18', a: 10},
-    { y: '2/19', a: 15},
-    { y: '2/20', a: 10},
-    { y: '2/21', a: 14}
-  ],
-  xkey: 'y',
-  ykeys: ['a'],
-  labels: ['Series A', 'Series B']
-});
-
-
-});

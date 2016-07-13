@@ -28,6 +28,10 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+.color-primary{
+	color: $color__text-light !important;
+}
+
 @import "lists";
 
 img {

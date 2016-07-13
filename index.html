@@ -5,65 +5,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bootstrap 101 Template</title>
+  <title>Dashboard Template</title>
 
   <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic'
+  rel='stylesheet' type='text/css'>
 
   <!-- CSS Files -->
-  <link href="assets/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/Ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <!-- Page Loader -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Page Loader -->
     <div class="page-loader">
-        <div class="loader">Loading...</div>
+      <div class="loader">Loading...</div>
     </div>
 
-  <header id="masthead" class="site-header" role="banner">
-    <div class="top-header">
-      <div class="container-fluid">
-        <div class="main-bar">
-          <div class="site-branding">
-            <span class="logo"> Logo </span>
-          </div>
-          <nav id="site-navigation" class="main-navigation" role="navigation">
-            <a id="nav-toggle" href="#" aria-controls="primary-menu" aria-expanded="false">
-              <span class="screen-reader-text">Primary Menu</span>
-              <span class="icon-bar top"></span>
-              <span class="icon-bar middle"></span>
-              <span class="icon-bar bottom"></span>
-            </a>
-
-            <div class="menu">
-              <ul>
-                <li><a href="#"><i class="ion-ios-bell"></i> Today</a></li>
-                <li><a href="#"><i class="ion-ios-browsers-outline"></i> Explore</a></li>
-                <li class="current_page_item"><a href="#"><i class="ion-ios-person-outline"></i> Admin</a></li>
-              </ul>
+    <header id="masthead" class="site-header" role="banner">
+      <div class="top-header">
+        <div class="container-fluid">
+          <div class="main-bar">
+            <div class="site-branding">
+              <span class="logo"> 
+                <img src="http://placehold.it/150x50">
+              </span>
             </div>
-          </nav><!-- #site-navigation -->
+          <nav id="site-navigation" class="main-navigation" role="navigation">
+              <a id="nav-toggle" href="#" aria-controls="primary-menu" aria-expanded="false">
+                <span class="screen-reader-text">Primary Menu</span>
+                <span class="icon-bar top"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar bottom"></span>
+              </a>
 
-          <div class="user-settings">
-            <div class="dropdown pull-right">
-              <button class="btn btn-ms btn-ms btn-ms-transparent" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="menu">
+                <ul>
+                  <li><a href="#"><i class="ion-ios-bell"></i> Today</a></li>
+                  <li><a href="#"><i class="ion-ios-browsers-outline"></i> Explore</a></li>
+                  <li class="current_page_item"><a href="#"><i class="ion-ios-person-outline"></i> Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </nav><!-- #site-navigation -->
+
+            <div class="user-settings">
+              <div class="dropdown pull-right">
+                <button class="btn btn-ms btn-ms-transparent" type="button" id="dropdownMenu1"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Rose M.
                 <i class="ion-ios-arrow-down"></i>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Notification</a></li>
                 <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
               </ul>
             </div>
           </div>
@@ -72,7 +75,7 @@
     </div>
   </header>
   <main class="site-content">
-    <div class="container">
+    <div class="container-fluid">
       <div class="page-info">Dashboard</div>
       <div class="row">
         <div class="col-md-6 pr-0">
@@ -81,38 +84,154 @@
               <header class="block-section-title">
                 <h2>Learners</h2>
               </header>
-              <div id="donut-example"></div>
+              <div class="col-sm-6  col-md-7">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="info-blocks info-title-big">
+                      <h3>62</h3>
+                      <span>total Learners <i class="ion-ios-information-outline" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="info-blocks">
+                      <h3>36</h3>
+                      <span>active recently <i class="ion-ios-information-outline" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i></span>
+                    </div>
+
+                    <div class="info-blocks">
+                      <h3>26</h3>
+                      <span>not active recently <i class="ion-ios-information-outline" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-5">
+                <div id="learners" style="height: 200px;"></div>
+              </div>
+            </div>
+            <div class="block-sections">
+            <div class="btn-group">
+              <button type="button" class="btn btn-ms btn-ms-transparent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Download CSV <i class="ion-ios-arrow-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All learners</a></li>
+                <li><a href="#">Recently active</a></li>
+                <li><a href="#">Recently inactive</a></li>
+                
+              </ul>
+            </div>
             </div>
             <div class="block-sections">
               <header class="block-section-title">
                 <h2>Graph</h2>
               </header>
-              <div id="bar-example"></div>
+              <div id="data-bar"></div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 pl-0">
-           <div class="section-wrapper">
-             <div class="block-sections">
+          <div class="section-wrapper">
+            <div class="block-sections">
               <header class="block-section-title">
                 <h2>CAMPAIGNS</h2>
               </header>
-              <div class="row">
-                <div class="col-md-8"></div>
-                <div class="col-md-4"></div>
+              <div class="flex-row">
+                <div class="flex-column-half">
+                  <div class="clearfix">
+                    <div class="col-sm-6">
+                      <div class="info-blocks info-title-big">
+                        <h3>1</h3>
+                        <span>campaign in progress</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="info-blocks">
+                        <h3>52</h3>
+                        <span>Learners <i class="ion-ios-information-outline" data-toggle="tooltip" data-placement="bottom" title="[Learners::] Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i></span>
+                      </div>
+
+                      <div class="info-blocks">
+                        <h3>1</h3>
+                        <span>milestones <i class="ion-ios-information-outline" data-toggle="tooltip" data-placement="bottom" title="[milestones::] Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 top-cta">
+                      <div class="row">
+                      <footer class="block-sections-footer">
+                        See campaigns in progress
+                      </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-column-half">
+                  <div class="info-blocks info-blocks-bg">
+                    <div class="d-table">
+                      <div class="d-tcell">
+                        <div class="info-blocks-content">
+                           <h3 class="color-primary">0</h3>
+                            Completed Campaigns
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-           </div>
+            <div class="block-sections">
+              <div class="clearfix">
+                <div class="col-sm-6 col-md-5">
+                  <div class="clearfix">
+                    <div class="info-blocks info-title-big">
+                      <h3 class="color-primary">6</h3>
+                      learners are past due
+                    </div>
+                    6 learners are past due in 1 milestone, across 1 campaign
+                    <a href="#" class="btn btn-ms btn-ms-primary btn-block">See List</a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-7 border-left">
+                   <div class="row">
+                    <header class="block-section-title">
+                      <h2>Daily Learning Report</h2>
+                    </header>
+                  
+                    <div class="col-sm-6">
+                      <div class="info-blocks">
+                        <h3 class="color-primary">20</h3>
+                        learners on pace on their daily learning
+                      </div>
+
+                      <div class="info-blocks">
+                        <h3 class="color-primary">32</h3>
+                        learners behind on their daily learning
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div id="total_learners" style="height: 280px;"></div>
+                    </div>
+                    <footer class="block-sections-footer">
+                      <a href="#" class="btn btn-ms btn-ms-transpaent btn-block">See List
+                      </a>
+                    </footer>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- jQuery (necessary JavaScript plugins) -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/raphael-min.js"></script>
-  <script src="assets/js/morris.min.js"></script>
+  <script src="assets/jquery/dist/jquery.min.js"></script>
+  <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/raphael-min/raphael-min.js"></script>
+  <script src="assets/morris.min/index.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
