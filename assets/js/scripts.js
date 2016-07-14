@@ -102,12 +102,22 @@
             });
         },
         
+        n.DataHeight = function () {
+            var pageSection = e(".data-height");
+            pageSection.each(function (indx) {
+
+                if (e(this).attr("data-height")) {
+                    e(this).css("height", "url(" + e(this).data("background") + ")");
+                }
+            });
+        },
+
         n.ToolTip = function () {
             e('[data-toggle="tooltip"]').tooltip();
         },
 
         e(document).ready(function () {
-            n.PreLoader(), n.mobileMenu.init(), n.Infographs(), n.ToolTip()
+            n.PreLoader(), n.mobileMenu.init(), n.Infographs(), n.DataHeight(), n.ToolTip()
         }), e(window).resize(function () {
         n.mobileMenu.addRemoveClasses()
     })

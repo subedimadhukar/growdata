@@ -91,6 +91,12 @@ body .btn-ms-primary:focus {
     color: $color__text-main;
 }
 
+.site-content .btn-ms{
+    text-align:left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .btn-ms-transparent:before {
     background: #0b62a4;
 }
@@ -223,6 +229,19 @@ footer.block-sections-footer {
 }
 .border-left{
     border-left: 1px solid #f1f1f1;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-container {
+        min-height: 362px;
+        .btn{
+            position: absolute;
+            left: 0;
+            right:0;
+            top:inherit;
+            bottom: 0;
+        }
+    }
 }
 /*--------------------------------------------------------------
 ## morris Bar
